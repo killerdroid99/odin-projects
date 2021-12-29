@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
+    <div class="section-1">
+        <div class="navbar">
+            <img src="./images/logo.jpeg" alt="" id="logo">
+            <ul class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section-2">Info</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="main-text">
+                This is a site for hackers
+                <p class="sub-text">
+                    Hacking refers to activities that seek to compromise digital devices, such as computers,
+                    smartphones, tablets, and even entire networks. And while hacking might not always be for malicious
+                    purposes, nowadays most references to hacking, and hackers, characterize it/them as unlawful
+                    activity by cyber criminals — motivated by financial gain, protest, information gathering (spying),
+                    and
+                    even just for the “fun” of the challenge.
+                </p>
+                <button class="hack">HACK</button>
+            </div>
+            <img src="/images/clint-patterson-dYEuFB8KQJk-unsplash.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="section-2">
+        <span>Types Of Hackers</span>
+        <div class="card-array">
+            <img src="./images/pexels-ashutosh-sonwani-1839564.jpg" alt="blackhat hacker" class="card">
+            <img src="./images/whitehat.png" alt="whitehat hacker" class="card">
+            <img src="./images/redhat.jpeg" alt="redhat hacker" class="card">
+            <img src="./images/greenhat.jpeg" alt="greenhat hacker" class="card">
+        </div>
+        <div class="description-array">
+            <p class="description">Black Hat: Criminal Hackers</p>
+            <p class="description">White Hat: Authorized Hackers</p>
+            <p class="description">Red Hat: Government-Hired Hackers</p>
+            <p class="description">Green Hat: Hackers-in-Training</p>
+        </div>
+    </div>
+    <div class="quote-block">
+        <p>Hacking involves a different way of looking at problems that no one's thought of.</p>
+        <p id="side-note">- Walter O'Brien</p>
+    </div>
+
+    <div class="section-3">
+        <div class="signup-box">
+            <h1>Signup for our newsletter to view the latest news related to hacking tech and other resources </h1>
+            <p>Click the "Allow" button to receive notifications</p>
+            <button id="alert">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright &copy The Odin Project 2022
+    </div>
 </body>
+<script>
+    let alertButton = function () {
+        alert('Allow notification?');
+    }
+    document.getElementById('alert').onclick = alertButton;
+</script>
+
 </html>
